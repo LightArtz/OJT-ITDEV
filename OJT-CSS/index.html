@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Job Training Day 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <!-- Selectors & Combinators -->
+    <h1>SELECTORS & COMBINATORS</h1>
+    <h2>SELECTORS</h2>
+
+    <p>Paragraph 1</p>
+    <p id="paragraph-2" class="paragraph-3">Paragraph 2</p>
+    <p class="paragraph-3">Paragraph 3</p>
+    <p>Paragraph 4</p>
+
+    <h2>COMBINATORS</h2>
+
+    <h3>Descendant Selector</h3>
+    <div class="descendant-selector">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+    </div>
+    <p>Paragraph 3</p>
+
+    <h3>Child Selector</h3>
+    <div class="child-selector">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <section>
+            <p>Paragaph 3</p>
+        </section>
+        <p>Paragraph 4</p>
+    </div>
+
+    <h3>Adjacent Sibling Selector</h3>
+    <div class="adjacent-sibling">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div class="adjacent-sibling">
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <h3>General Sibling Selector</h3>
+    <p>Paragraph 1</p>
+    <div class="general-sibling">
+        <p>Paragraph 2</p>
+    </div>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+
+    <!-- Color -->
+    <h1>COLOR</h1>
+    <h2>Color</h2>
+    <p class="color">Color</p>
+
+    <h2>RGB, HEX, HSL</h2>
+    <p class="rgb">RGB</p>
+    <p class="hex">HEX</p>
+    <p class="hsl">HSL</p>
+
+    <!-- Display -->
+    <h1>DISPLAY</h1>
+    <h2>Display: Block</h2>
+    <div class="display display-block">
+        <div class="text">Text 1</div>
+        <div class="text">Text 2</div>
+        <div class="text">Text 3</div>
+    </div>
+    <hr>
+    <h2>Display: Inline</h2>
+    <div class="display display-inline">
+        <div class="text">Text 1</div>
+        <div class="text">Text 2</div>
+        <div class="text">Text 3</div>
+    </div>
+    <hr>
+    <h2>Display: Inline-Block</h2>
+    <div class="display display-inlineblock">
+        <div class="text">Text 1</div>
+        <div class="text">Text 2</div>
+        <div class="text">Text 3</div>
+    </div>
+
+    <!-- Box Model -->
+    <h1>BOX MODEL</h1>
+    <div class="box-model">
+        Content
+    </div>
+
+    <!-- Flex Box -->
+    <h1>FLEXBOX</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!-- Font -->
+    <h1>FONT</h1>
+    <p class="font">Text</p>
+
+    <!-- Text Decoration -->
+    <h1>TEXT DECORATION</h1>
+    <h3 class="heading1">Heading 1</h3>
+    <h3 class="heading2">Heading 2</h3>
+    <h3 class="heading3">Heading 3</h3>
+    <h3 class="heading4">Heading 4</h3>
+
+    <!-- Position -->
+    <h1>POSITION</h1>
+
+    <div class="static">
+        This div element has position: static
+    </div>
+
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <div class="relative2">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+    <!-- Box Sizing -->
+    <h1>BOX SIZING</h1>
+    <h2>Without border box</h2>
+    <div class="div1nobb"></div>
+    <div class="div2nobb"></div>
+
+    <h2>With border box</h2>
+    <div class="div1withbb"></div>
+    <div class="div2withbb"></div>
+
+    <!-- CSS Units -->
+    <h1>CSS Units</h1>
+    <a href="https://www.w3schools.com/cssref/css_units.php" target="_blank">Penjelasan setiap unit</a>
+
+</body>
+</html>

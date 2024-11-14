@@ -1,0 +1,242 @@
+/* PENGERTIAN CSS */
+/* CSS adalah bahasa yang digunakan dalam coding untuk menciptakan visual dari bahasa markup seperti HTML */
+
+
+/* SELECTORS & COMBINATORS */
+/* 
+Selectors:
+- element -> select all specified elements
+- # -> select elements with specific id
+- . -> select elements with specific class
+- * -> select all elements
+*/
+/* p {
+     color: red;
+}
+
+#paragraph-2 {
+     color: blue;
+}
+
+.paragraph-3 {
+     color: brown;
+}
+
+* {
+     color: black;
+} */
+
+/*
+Combinators:
+- Descendant combinator (space)
+- Child combinator (>)
+- Next sibling combinator (+)
+- Subsequent-sibling combinator (~)
+*/
+/* .descendant-selector p {
+     background-color: yellow;
+}
+
+.child-selector > p {
+     background-color: blue;
+}
+
+.adjacent-sibling + p {
+     background-color: chartreuse;
+}
+
+.general-sibling ~ p {
+     background-color: burlywood;
+} */
+
+
+/* COLOR */
+/* color: rgb, hex, hsl */
+.color {
+     color: red;
+}
+
+.rgb {
+     color: rgb(0, 0, 255); /* intensity of red, green, blue */
+}
+
+.hex {
+     color: #00ff00; /* same like rgb, but hexadecimal */
+}
+
+.hsl {
+     color: hsl(0, 50%, 50%);
+}
+
+/* DISPLAY */
+/* Display: block, inline, inline-block, flex */
+.display {
+     background-color: aqua;
+}
+
+.display-block .text {
+     display: block;
+     width: 100px;
+     background-color: coral;
+     margin: 10px;
+}
+
+.display-inline .text {
+     display: inline;
+     width: 100px;
+     background-color: coral;
+     margin: 10px;
+}
+
+.display-inlineblock .text {
+     display: inline-block;
+     width: 100px;
+     background-color: coral;
+     margin: 10px;
+}
+
+
+/* BOX MODEL */
+/* Box Model: Margin, Padding, Border, Width, Height */
+.box-model {
+     background-color: blueviolet;
+     margin: 50px 10px 0px 100px; /* atas kanan bawah kiri*/
+     padding: 50px;
+     border: 3px solid black;
+     width: 200px;
+     height: 200px;
+}
+
+/* Link: https://www.w3schools.com/css/css_boxmodel.asp */
+
+
+/* FLEXBOX */
+.flex-container {
+     display: flex;
+     background-color: dodgerblue;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+     flex-direction: column;
+}
+
+.flex-container div {
+     background-color: #f1f1f1;
+     margin: 10px;
+     padding: 20px;
+     font-size: 30px;
+     height: 50px;
+}
+
+/* FONTS */
+/* Fonts: font, font style, font size */
+.font {
+     font-family: "Sofia", sans-serif;
+     font-size: 20px;
+     font-weight: 800;
+     font-style: italic;
+     font-variant: small-caps;
+}
+
+/* Google font: https://fonts.googleapis.com/css?family=Sofia */
+
+
+/* TEXT DECORATION */
+/* Text decoration: line, color, style, thickness */
+.heading1 {
+     text-decoration: overline red dotted 10px;
+}
+
+.heading2 {
+     text-decoration: line-through green wavy;
+}
+
+.heading3 {
+     text-decoration: underline blue double;
+}
+
+.heading4 {
+     text-decoration: underline overline;
+}
+
+
+/* POSITION */
+/* Position: static, relative, fixed, absolute */
+.static {
+     position: static;
+     border: 3px solid lime;
+}
+
+.relative {
+     position: relative;
+     left: 30px;
+     border: 3px solid lime;
+}
+
+.fixed {
+     position: fixed;
+     border: 3px solid lime;
+     bottom: 0;
+     right: 0;
+     width: 300px;
+}
+
+.relative2 {
+     position: relative;
+     width: 400px;
+     height: 200px;
+     border: 3px solid lime;
+}
+
+.absolute {
+     position: absolute;
+     top: 80px;
+     right: 0;
+     width: 200px;
+     height: 100px;
+     border: 3px solid lime;
+}
+
+/* BOX-SIZING */
+/* width + padding + border = actual width */
+/* height + padding + border = actual height */
+.div1nobb {
+     width: 300px;
+     height: 100px;
+     border: 1px solid blue;
+}
+
+.div2nobb {
+     width: 300px;
+     height: 100px;
+     padding: 50px;
+     border: 1px solid blue;
+}
+
+.div1withbb {
+     width: 300px;
+     height: 100px;
+     border: 1px solid blue;
+     box-sizing: border-box;
+}
+
+.div2withbb {
+     width: 300px;
+     height: 100px;
+     padding: 50px;
+     border: 1px solid blue;
+     box-sizing: border-box;
+}
+
+
+/* CSS UNITS */
+/* css units: px, em, rem, %, vw, vh */
+/*
+px = 1/96 of 1 in, 1 in = 2.54 cm
+em = Relative to the font-size of the element 
+     (2em means 2 times the size of the current font)
+rem = Relative to font-size of the root element
+% = Relative to parent element
+vw = Relative to 1% of the width of the viewport
+vh = Relative to 1% of the height of the viewport
+*/
